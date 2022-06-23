@@ -2,17 +2,17 @@
     <div class="btn-group" name='container'>
         <button class="btn btn-primary" btnRadio='Unread' [(ngModel)]="container" 
             (click)="loadMessages()">
-            <i class="fa fa-envelope"></i> Unread
+            <i class="fa fa-envelope"></i> Não lidas
         </button>
 
         <button class="btn btn-primary" btnRadio='Inbox' [(ngModel)]="container" 
             (click)="loadMessages()">
-            <i class="fa fa-envelope-open"></i> Inbox
+            <i class="fa fa-envelope-open"></i> Recebidas
         </button>
 
         <button class="btn btn-primary" btnRadio='Outbox' [(ngModel)]="container" 
             (click)="loadMessages()">
-            <i class="fa fa-paper-plane"></i> Outbox
+            <i class="fa fa-paper-plane"></i> Enviadas
         </button>
     </div>
 </div>
@@ -25,9 +25,9 @@
     <table class="table table-hover" style="cursor: pointer">
         <thead>
             <tr>
-                <th style="width: 40%">Message</th>
-                <th style="width: 20%">From / To</th>
-                <th style="width: 20%">Sent / Received</th>
+                <th style="width: 40%">Menssagem</th>
+                <th style="width: 20%">De / Para</th>
+                <th style="width: 20%">Enviada / Recebida</th>
                 <th style="width: 20%"></th>
             </tr>
         </thead>
@@ -64,7 +64,7 @@
                     (click)="$event.stopPropagation()" 
                     (click)="deleteMessage(message.id)" 
                     class='btn btn-danger'>
-                    Delete
+                    Excluir
                 </button>
             </td>
             </tr>

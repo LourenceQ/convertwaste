@@ -2,11 +2,13 @@ import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryAnimation } from '@kolkov/ngx-gallery';
 import { TabDirective, TabsetComponent } from 'ngx-bootstrap/tabs';
+import { ToastrService } from 'ngx-toastr';
 import { take } from 'rxjs';
 import { Member } from 'src/app/_models/member';
 import { Message } from 'src/app/_models/message';
 import { User } from 'src/app/_models/user';
 import { AccountService } from 'src/app/_services/account.service';
+import { MemberService } from 'src/app/_services/member.service';
 import { MessageService } from 'src/app/_services/message.service';
 import { PresenceService } from 'src/app/_services/presence.service';
 
@@ -29,7 +31,9 @@ export class MemberDetailComponent implements OnInit, OnDestroy {
       , private route: ActivatedRoute
       , private messageService: MessageService
       , private accountervice: AccountService
-      , private router: Router) {        
+      , private router: Router
+      , private memberService: MemberService
+      , private toastr: ToastrService) {        
         this.accountervice.currentUser$
           .pipe(take(1))
           .subscribe(user => this.user = user);
@@ -58,6 +62,12 @@ export class MemberDetailComponent implements OnInit, OnDestroy {
     ]
 
     this.galleryImages = this.getImages();    
+  }
+
+  addLike(member: Member) {
+    this.memberService.addLike(member.username).subscribe(() => {
+      this.toastr.success(member.knownAs + ' foi adicionado') 
+    })
   }
 
   getImages() : NgxGalleryImage[] {

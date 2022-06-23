@@ -10,32 +10,32 @@
                     class="mb-2" 
                     *ngIf="(presenceService.onlineUsers$ | async).includes(member.username)">
 
-                    <i class="fa fa-user-circle text-success"></i> Online now
+                    <i class="fa fa-user-circle text-success"></i> Online agora
                 </div>
 
                 <div>
-                    <strong>Location:</strong>
+                    <strong>Localização:</strong>
                     <p>{{member.city}}, {{member.country}}</p>
                 </div>
 
                 <div>
-                    <strong>Age:</strong>
+                    <strong>Idade:</strong>
                     <p>{{member.age}}</p>
                 </div>
 
                 <div>
-                    <strong>Last active:</strong>
+                    <strong>Ultima Atividade</strong>
                     <p>{{member.lastActive | timeago}}</p>
                 </div>
 
                 <div>
-                    <strong>Member since:</strong>
+                    <strong>Membro desde:</strong>
                     <p>{{member.created | date: 'dd MMM yyyy'}}</p>
                 </div>
                 <div class="card-footer">
                     <div class="btn-group d-flex">
-                        <button class="btn btn-primary">Like</button>
-                        <button (click)="selectTab(3)" class="btn btn-success">Message</button>
+                        <button class="btn btn-primary" (click)="addLike(member)">Adicionar</button>
+                        <button (click)="selectTab(3)" class="btn btn-success">Menssagem</button>
                     </div>
                 </div>
             </div>
@@ -43,19 +43,19 @@
     </div>
     <div class="col-8">
         <tabset class="member-tabset" #memberTabs>
-            <tab heading='About {{member.knownAs}}' (selectTab)="onTabActivated($event)">
-                <h4>Description</h4>
+            <tab heading='Sobre {{member.knownAs}}' (selectTab)="onTabActivated($event)">
+                <h4>Descrição</h4>
                 <p>{{member.introduction}}</p>
-                <h4>Looking for</h4>
+                <h4>Procura for</h4>
                 <p>{{member.lookingFor}}</p>
             </tab>
 
-            <tab heading='Interests' (selectTab)="onTabActivated($event)">
-                <h4>Interests</h4>
+            <tab heading='Interesses' (selectTab)="onTabActivated($event)">
+                <h4>Interesses</h4>
                 <p>{{member.interests}}</p>
             </tab>
 
-            <tab heading='Photos' (selectTab)="onTabActivated($event)">
+            <tab heading='Fotos' (selectTab)="onTabActivated($event)">
                 <ngx-gallery 
                     [options]="galleryOptions" 
                     [images]="galleryImages" 
@@ -64,7 +64,7 @@
                 </ngx-gallery>
             </tab>
 
-            <tab heading='Messages' (selectTab)="onTabActivated($event)">
+            <tab heading='Menssagens' (selectTab)="onTabActivated($event)">
                 <app-member-messages [username]="member.username" ></app-member-messages>
             </tab>
         </tabset>
