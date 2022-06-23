@@ -9,7 +9,7 @@ import { PresenceService } from './_services/presence.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'DotnetWebAPI';
+  title = 'ConvertWaste';
   users: any;
 
   constructor(private accountService: AccountService
