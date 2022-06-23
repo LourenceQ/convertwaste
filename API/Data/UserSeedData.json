@@ -11,6 +11,7 @@
         "Interests": "In nostrud consectetur magna esse est commodo minim fugiat Lorem in.",
         "City": "Monument",
         "Country": "Bermuda",
+        "CPF": "69306293089",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/women/60.jpg",
@@ -30,6 +31,7 @@
         "Interests": "Qui in est fugiat excepteur non.",
         "City": "Dargan",
         "Country": "Christmas Island",
+        "CPF": "16827051021",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/women/20.jpg",
@@ -49,6 +51,7 @@
         "Interests": "Ipsum sunt consectetur nisi fugiat.",
         "City": "Williams",
         "Country": "Nepal",
+        "CPF": "57450968029",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/women/2.jpg",
@@ -68,6 +71,7 @@
         "Interests": "Non magna in ullamco exercitation esse nostrud qui occaecat sunt ex sit aute est.",
         "City": "Saranap",
         "Country": "Philippines",
+        "CPF": "72021754014",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/women/54.jpg",
@@ -87,6 +91,7 @@
         "Interests": "Occaecat aliqua labore est do minim nulla occaecat id.",
         "City": "Salvo",
         "Country": "Reunion",
+        "CNPJ": "10741591000101",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/women/12.jpg",
@@ -106,6 +111,7 @@
         "Interests": "Et irure laborum dolor duis.",
         "City": "Gratton",
         "Country": "Tunisia",
+        "CNPJ": "52222239000100",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/men/30.jpg",
@@ -125,6 +131,7 @@
         "Interests": "Eiusmod anim quis exercitation cupidatat nisi.",
         "City": "Coalmont",
         "Country": "Yemen",
+        "CNPJ": "66751894000160",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/men/11.jpg",
@@ -144,6 +151,7 @@
         "Interests": "Sint excepteur magna esse id ad sit commodo ipsum consequat.",
         "City": "Tryon",
         "Country": "Kazakhstan",
+        "CNPJ": "78246311000122",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/men/60.jpg",
@@ -163,6 +171,7 @@
         "Interests": "Adipisicing et in occaecat sit nostrud esse cupidatat id culpa Lorem magna consequat.",
         "City": "Williams",
         "Country": "Saint Kitts and Nevis",
+        "CNPJ": "70615852000179",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/men/40.jpg",
@@ -182,6 +191,7 @@
         "Interests": "Amet excepteur id aute anim ex sunt amet nostrud ea aute occaecat do non elit.",
         "City": "Gordon",
         "Country": "Guinea-Bissau",
+        "CNPJ": "49293066000106",
         "Photos": [
             {
                 "Url": "https://randomuser.me/api/portraits/men/17.jpg",

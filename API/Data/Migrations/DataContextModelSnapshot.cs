@@ -52,6 +52,12 @@ namespace API.Data.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("CNPJ")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CPF")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("City")
                         .HasColumnType("TEXT");
 
